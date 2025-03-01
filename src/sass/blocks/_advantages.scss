@@ -2,6 +2,17 @@
     min-height: 473px;
     padding-top: 70px;
     background-color: rgb(246, 246, 246);
+    .title {
+        text-align: center;
+        animation: shake 1s ease-in-out infinite;
+    }
+    @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-1deg); }
+    50% { transform: translateX(5px) rotate(1deg); }
+    75% { transform: translateX(-3px) rotate(-0.5deg); }
+    100% { transform: translateX(0); }
+    }
     &__icons {
         display: flex;
         justify-content: space-between;
@@ -15,11 +26,13 @@
         font-weight: 700;
         line-height: 29px;
         margin-bottom: 20px;
-        img {
+        .img__animation {
             display: block;
             margin: 0 auto;
             margin-bottom: 35px;
-            
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 2s ease-in-out infinite alternate;
         }
         article {
             margin-top: 20px;
@@ -32,4 +45,22 @@
             font-family: "ITC Bauhaus";
         }
     }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Эффект при наведении */
+.img__animation:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }

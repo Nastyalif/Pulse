@@ -19,6 +19,20 @@
     background: url(../img/first_screen/bg_adap.png) center center/cover no-repeat;
   }
 }
+.promo h1, .promo h2 {
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
 .promo__wrapper {
   display: flex;
   flex-direction: column;
@@ -139,10 +153,36 @@
   font-size: 14px;
 }
 
+.button:active {
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.8);
+  transform: scale(1.05);
+}
+
 .advantages {
   min-height: 473px;
   padding-top: 70px;
   background-color: rgb(246, 246, 246);
+}
+.advantages .title {
+  text-align: center;
+  animation: shake 1s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .advantages__icons {
   display: flex;
@@ -157,10 +197,13 @@
   line-height: 29px;
   margin-bottom: 20px;
 }
-.advantages__icon img {
+.advantages__icon .img__animation {
   display: block;
   margin: 0 auto;
   margin-bottom: 35px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 2s ease-in-out infinite alternate;
 }
 .advantages__icon article {
   margin-top: 20px;
@@ -171,6 +214,23 @@
 .advantages__icon a {
   color: red;
   font-family: "ITC Bauhaus";
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Эффект при наведении */
+.img__animation:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .title {
@@ -191,6 +251,27 @@
   min-height: 680px;
   padding: 100px 0 92px 0;
   background: url(../img/bg2.png) center center/cover no-repeat; /*center - картинка будет строго по центру, (center/cover) - будет растягиваться во всю ширину, no-repeat - не будет она повторяться  */
+}
+.consultation .title {
+  text-align: center;
+  animation: shake 1s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .consultation__descr {
   color: #fff;
@@ -246,6 +327,27 @@
 
 .catalog {
   padding-bottom: 79px;
+}
+.catalog .title {
+  text-align: center;
+  animation: shake 1s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .catalog__tabs {
   margin-top: 70px;
@@ -429,6 +531,24 @@
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 60px;
+  animation: shake 1s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .reviwes h3 {
   font-size: 18px;

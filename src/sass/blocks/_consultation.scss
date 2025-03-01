@@ -2,6 +2,32 @@
     min-height: 680px;
     padding: 100px 0 92px 0;
     background: url(../img/bg2.png) center (center/cover) no-repeat; /*center - картинка будет строго по центру, (center/cover) - будет растягиваться во всю ширину, no-repeat - не будет она повторяться  */
+    .title {
+            text-align: center;
+            animation: shake 1s ease-in-out infinite;
+        }
+    
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+    
+            25% {
+                transform: translateX(-5px) rotate(-1deg);
+            }
+    
+            50% {
+                transform: translateX(5px) rotate(1deg);
+            }
+    
+            75% {
+                transform: translateX(-3px) rotate(-0.5deg);
+            }
+    
+            100% {
+                transform: translateX(0);
+            }
+        }
     &__descr {
         color: #fff;
         font-size: 20px;

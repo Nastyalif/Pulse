@@ -5,6 +5,22 @@
     @media screen and (max-width: 768px) {
             background: url(../img/first_screen/bg_adap.png) center (center/cover) no-repeat;
     }
+    h1, h2 {
+        animation-duration: 3s;
+        animation-name: slide-in;
+    }
+        @keyframes slide-in {
+            from {
+                translate: 150vw 0;
+                scale: 200% 1;
+            }
+    
+            to {
+                translate: 0 0;
+                scale: 100% 1;
+            }
+        }
+
     &__wrapper
     {
         display: flex;

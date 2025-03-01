@@ -27,3 +27,7 @@
             font-size: 14px;
         }
 }
+.button:active {
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.8);
+    transform: scale(1.05);
+}
