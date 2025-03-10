@@ -80,14 +80,55 @@ $(document).ready(function(){
     });
   };
 
+  
   validateForms('#consultation-form');
   validateForms('#consultation form');
   validateForms('#order form');
 
+  $('form').submit(function (e) {
+    e.preventDefault();
 
-  $('input[name=phone]').mask("+380 (99) 999-99-99")
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-  $('form').submit(function(e) {
-    e.precventDefault();/* отменить стандарстное поведения браузера */
+    if (!$(this).valid()) {
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function () {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+    });
+    return false;
   });
+
+  // Smooth scroll and pageup
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  $("a[href=#up]").click(function () {
+    const _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    return false;
+  });
+
+  new WOW().init();
 });
+  
+
+
+    
+    
+    

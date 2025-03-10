@@ -49,11 +49,11 @@
             max-height: 170px;
             max-width: 170px;
     }
-    article {
+    p {
         font-weight: 300;
         font-size: 16px;
     }
-    &__desc {
+    &__desc { /* дочерним элементом блока */
     display: flex;
     flex-direction: column;
     margin-left: 61px;

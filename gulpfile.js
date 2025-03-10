@@ -6,6 +6,12 @@ const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
+gulp.task("fonts", function () {
+    return gulp
+        .src("src/fonts/**/*", { encoding: false })  // Вот тут!
+        .pipe(gulp.dest("dist/fonts"));
+});
+
 // Таск для сборки SCSS -> CSS с автопрефиксом и минификацией
 function styles() {
     return gulp.src("src/sass/**/*.+(scss|sass)") // Берем все SCSS-файлы

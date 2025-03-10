@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pulse</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+<title>Pulse</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+</header>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <img src="icons/first screen/logo.png" alt="logo">
+                    <img src="icons/first-screen/logo.png" alt="logo">
                 </a>
                 <div class="header__official">
                     Официальный представитель
@@ -38,17 +40,17 @@
                 <div class="promo__icons">
 
                     <div class="promo__icon">
-                        <img src="icons/first screen/time.png" alt="time">
+                        <img src="icons/first-screen/time.png" alt="time">
                         Время подбора:
                         10 минут
                     </div>
                     <div class="promo__icon">
-                        <img src="icons/first screen/hand-cart.png" alt="hand-cart">
+                        <img src="icons/first-screen/hand-cart.png" alt="hand-cart">
                         Бесплатная
                         доставка
                     </div>
                     <div class="promo__icon">
-                        <img src="icons/first screen/messages.png" alt="messages">
+                        <img src="icons/first-screen/messages.png" alt="messages">
                         Ответим
                         на все вопросы
                     </div>
@@ -72,12 +74,12 @@
                 <div class="advantages__icon">
                     <img class="img__animation" src="icons/advantages/cup.png" alt="cup">
                     Делимся опытом
-                    <article class="text__cup">Наши сотрудники всегда готовы <br>поделиться своим
+                    <article class="text__cup">Наши сотрудники всегда готовы <br>поделиться своим <!-- ............... проверить это на валидацию -->
                         опытом,<br> так как сами бегают полумарафоны, переплыли Босфор, готовятся к
                         соревнованиям по триатлону!</article>
                 </div>
                 <div class="advantages__icon">
-                    <img class="img__animation" src="icons/advantages/heart.png" alt="heart">
+                    <img class="img__animation img__animation_animate" src="icons/advantages/heart.png" alt="heart">
                     Заботимся о здоровье
                     <article class="text__heart">Мы работаем для того, <br> чтобы Ваши занятия спортом шли на пользу
                         Вашему здоровью и были в радость Вам и Вашим близким!</article>
@@ -115,7 +117,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -129,8 +131,7 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
@@ -156,7 +157,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list ">
+                        <div class="catalog-item__list ">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -168,7 +169,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -189,7 +190,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -201,7 +202,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -222,7 +223,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -234,7 +235,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -255,7 +256,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -267,7 +268,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -288,7 +289,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -300,7 +301,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -321,7 +322,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -333,7 +334,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -356,7 +357,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list ">
+                        <div class="catalog-item__list ">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -368,7 +369,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -391,7 +392,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -403,7 +404,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -424,7 +425,7 @@
                             </div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
+                        <div class="catalog-item__list">
                             <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
                             </li>
                             <li>
@@ -436,7 +437,7 @@
                                 Вы сможете посмотреть данные по 10 тренировкам.
                             </li>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -454,53 +455,59 @@
     <section class="reviwes">
         <div class="container">
             <h2>отзывы клиентов</h2>
-            <div class="reviwes__first">
-                <img src="icons/reviews/photo_1.png" alt="first response">
-                <div class="reviwes__desc">
-                    <h3>Ирина Иванченко</h3>
-                    <small>2 полумарафона</small>
-                    <article>
-                        Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали<br>
-                        пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>
-                        Через некоторое время решила обновить гаджет - не раздумывая обратилась туда<br>
-                        же.<br><br>
-                        Новые цели - новый гаджет!<br><br>
-                        Спасибо, RunSmart!
-                    </article>
+            <div class="animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="reviwes__first">
+                    <img src="icons/reviews/photo_1.png" alt="first response">
+                    <div class="reviwes__desc">
+                        <h3>Ирина Иванченко</h3>
+                        <small>2 полумарафона</small>
+                        <p>
+                            Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали<br>
+                            пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>
+                            Через некоторое время решила обновить гаджет - не раздумывая обратилась туда<br>
+                            же.<br><br>
+                            Новые цели - новый гаджет!<br><br>
+                            Спасибо, RunSmart!
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <div class="reviwes__second">
-                <img src="icons/reviews/photo_2.png" alt="second response">
-                <div class="reviwes__desc">
-                    <h3>Иван Сёмочкин</h3>
-                    <small>1 полумарафон</small>
-                    <article>
-                        Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе<br>
-                        делал.<br>
-                        Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели<br>
-                        первую тренировку, научили пользоваться новым гаджетом. Также объяснили<br>
-                        основы анатомии, составили план тренировок на месяц вперёд.<br><br>
-                        С ними подготовился к своему первому полумарафону! Спасибо!!!
-                    </article>
+                
+            <div class="animate__animated animate__fadeInUp wow " data-wow-duration="2s" data-wow-delay="1s">
+                <div class="reviwes__second">
+                    <img src="icons/reviews/photo_2.png" alt="second response">
+                    <div class="reviwes__desc">
+                        <h3>Иван Сёмочкин</h3>
+                        <small>1 полумарафон</small>
+                        <p>
+                            Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе<br>
+                            делал.<br>
+                            Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели<br>
+                            первую тренировку, научили пользоваться новым гаджетом. Также объяснили<br>
+                            основы анатомии, составили план тренировок на месяц вперёд.<br><br>
+                            С ними подготовился к своему первому полумарафону! Спасибо!!!
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <div class="reviwes__third">
-                <img src="icons/reviews/photo_3.png" alt="third response">
-                <div class="reviwes__desc">
-                    <h3>Юлия Дашкина</h3>
-                    <small>2 полумарафона</small>
-                    <article>
-                        Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось<br>
-                        тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и<br>
-                        решила попробовать.<br><br>
-                        Позвонила, ребята поинтересовались моими целями и подобрали очень<br>
-                        интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала<br>
-                        уже 2 полумарафона и несколько более коротких забегов и не намерена<br>
-                        останавливаться!<br><br>
-                        Спасибо!!!
-                    </article>
+            
+            <div class="animate__animated animate__fadeInUp wow " data-wow-duration="2s" data-wow-delay="1s">
+                <div class="reviwes__third">
+                    <img src="icons/reviews/photo_3.png" alt="third response">
+                    <div class="reviwes__desc">
+                        <h3>Юлия Дашкина</h3>
+                        <small>2 полумарафона</small>
+                        <p>
+                            Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось<br>
+                            тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и<br>
+                            решила попробовать.<br><br>
+                            Позвонила, ребята поинтересовались моими целями и подобрали очень<br>
+                            интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала<br>
+                            уже 2 полумарафона и несколько более коротких забегов и не намерена<br>
+                            останавливаться!<br><br>
+                            Спасибо!!!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -509,7 +516,7 @@
     <footer class="footer">
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22005.03326823684!2d30.6932635395508!3d46.41640789999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6336cd6e4fddf%3A0xc771906e9fda7f54!2sCOMFY!5e0!3m2!1sru!2sua!4v1740697682414!5m2!1sru!2sua"
-        width="100%" height="630" frameborder="0" style="border:0" allowfullscreen></iframe>
+          style="border:0" width="100%" height="630"></iframe>
         
         <div class="footer__info">
             <address class="footer__addr">Одесса, проспект Небесной Сотни, 2</address>
@@ -559,12 +566,16 @@
         </div>
     </div>
 
+    <!-- <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a> -->
     <!-- Подключение библиотек -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
     <!-- скриптовый файл подключен к странице подключения для использования JS в проекте -->
 </body>

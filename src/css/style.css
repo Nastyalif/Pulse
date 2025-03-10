@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/* переменные */
+@keyframes hearbeat { /* hearbeat - названия анимации */
+  from {
+    transform: scale(1); /* scale - это параметр, а именно маштаб  - 1 - соответствует 100%*/
+  }
+  50% { /* можна ешё промисать промижуточные значения */
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1); /* этот элемент будет увеличеваться на 1.1 - на 10%  */
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -166,23 +178,6 @@
   text-align: center;
   animation: shake 1s ease-in-out infinite;
 }
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px) rotate(-1deg);
-  }
-  50% {
-    transform: translateX(5px) rotate(1deg);
-  }
-  75% {
-    transform: translateX(-3px) rotate(-0.5deg);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .advantages__icons {
   display: flex;
   justify-content: space-between;
@@ -200,9 +195,6 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 35px;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 2s ease-in-out infinite alternate;
 }
 .advantages__icon article {
   margin-top: 20px;
@@ -215,23 +207,7 @@
   font-family: "ITC Bauhaus";
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /* Эффект при наведении */
-.img__animation:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
 .title {
   color: rgb(13, 13, 13);
   font-size: 30px;
@@ -578,11 +554,11 @@
   max-height: 170px;
   max-width: 170px;
 }
-.reviwes article {
+.reviwes p {
   font-weight: 300;
   font-size: 16px;
 }
-.reviwes__desc {
+.reviwes__desc { /* дочерним элементом блока */
   display: flex;
   flex-direction: column;
   margin-left: 61px;
@@ -652,6 +628,18 @@
   align-items: center;
 }
 
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 40px;
+}
+.pageup img {
+  width: 40px;
+  height: 40px;
+}
+
 .overlay {
   display: none;
   position: fixed;
@@ -709,3 +697,5 @@
 #consultation, #order, #thanks {
   display: none;
 }
+
+/*# sourceMappingURL=style.css.map */

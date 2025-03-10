@@ -20,6 +20,7 @@
     "sass": "^1.85.0"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3"
   }
 }
